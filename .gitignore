@@ -1,0 +1,23 @@
+# Ignore Bazel files in the root
+/bazel-bin/
+/bazel-out/
+/bazel-testlogs/
+/bazel-<workspace_name>/
+.bazelcache/
+.bazel/
+
+# Ignore Bazel files in first-level subdirectories explicitly
+# Repeat patterns for each known first-level subdirectory
+/load_balancer/bazel-bin/
+/load_balancer/bazel-out/
+/load_balancer/bazel-testlogs/
+/service_node/bazel-bin/
+/service_node/bazel-out/
+/service_node/bazel-testlogs/
+/commn/bazel-bin/
+/common/bazel-out/
+/common/bazel-testlogs/
+# Continue for other first-level directories as needed
+
+# Other files to ignore
+*.log
